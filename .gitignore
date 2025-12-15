@@ -29,3 +29,6 @@ redis_data/
 # --- 5. Vendor (Tùy chọn) ---
 # Go hiện đại dùng go.mod để tải thư viện, không cần push code thư viện lên
 vendor/
+
+# --- 6. .gitignore ---
+.gitignore
