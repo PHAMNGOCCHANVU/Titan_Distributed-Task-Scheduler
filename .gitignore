@@ -1,0 +1,31 @@
+# --- 1. Binaries & Build Results (File chạy, sinh ra khi compile) ---
+# Không push vì mỗi hệ điều hành (Mac/Win/Linux) cần file chạy khác nhau
+main
+main.exe
+titan-scheduler
+/bin/
+/dist/
+*.test
+
+# --- 2. Sensitive Configs (BẢO MẬT - QUAN TRỌNG NHẤT) ---
+# Chứa password DB, API Key. Chỉ giữ lại file mẫu (ví dụ config.example.yaml)
+.env
+config/config.yaml
+# Giữ lại file mẫu để người khác biết cấu trúc
+!config/config.example.yaml
+
+# --- 3. IDE & Editor specific (Cấu hình riêng của máy bạn) ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# --- 4. Docker Volumes (Dữ liệu Database) ---
+# Nếu bạn map dữ liệu DB ra thư mục project, tuyệt đối không push
+postgres_data/
+rabbitmq_data/
+redis_data/
+
+# --- 5. Vendor (Tùy chọn) ---
+# Go hiện đại dùng go.mod để tải thư viện, không cần push code thư viện lên
+vendor/
